@@ -12,7 +12,7 @@ function App() {
 
 
   const createUser = async () => {
-    await addDoc(usersCollectionRef, {name: newName, age: Number(newAge)} )
+    await addDoc(usersCollectionRef, {name: newName, age: newAge} )
   }
 
   const updateUser = async (id, age) => {
