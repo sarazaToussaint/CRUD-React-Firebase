@@ -5,7 +5,7 @@ import { collection, getDocs, addDoc, updateDoc, doc, deleteDoc} from 'firebase/
 
 export const Firestore = () => {
     const [ newName, setNewName ] = useState("");
-    const [ newAge, setNewAge ] = useState(0);
+    const [ newAge, setNewAge ] = useState('');
   
     const [ users, setUsers ] = useState([]);
     const usersCollectionRef = collection(db, "users");
