@@ -61,7 +61,6 @@ const Login = () => {
           setRegisterPassword(event.target.value);
            }} 
           />
-
         <button onClick={register}>Create User</button>
       </div>
 
