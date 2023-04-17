@@ -1,11 +1,12 @@
 
 import './App.css';
-import { Firestore } from './components/Firestore';
+import Login from './components/Login';
+// import { Firestore } from './components/Firestore';
 
 function App() {
   return (
     <>
-      <Firestore />
+      <Login />
     </>
   );
 }
