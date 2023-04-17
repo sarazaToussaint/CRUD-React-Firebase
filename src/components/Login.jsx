@@ -80,7 +80,7 @@ const Login = () => {
       </div>
       
       <h4>User Logged In: </h4>
-      {user?.email}
+      {user.email}
       <button onClick={logout}>Sign Out</button>
     </>
   )
