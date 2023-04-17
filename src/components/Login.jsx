@@ -50,13 +50,13 @@ const Login = () => {
       <div>
         <h3>Register User</h3>
         <input type="email" placeholder="Email..." 
-          onChange={(e) => {
-           setRegisterEmail(e.target.value);    
+          onChange={(event) => {
+           setRegisterEmail(event.target.value);    
           }} 
           />
         <input type="password" placeholder="Password..." 
-          onChange={(e) => {
-          setRegisterPassword(e.target.value);
+          onChange={(event) => {
+          setRegisterPassword(event.target.value);
            }} 
           />
 
