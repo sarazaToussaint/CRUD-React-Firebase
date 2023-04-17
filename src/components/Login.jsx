@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { createUserWithEmailAndPassword, 
+import { createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
   onAuthStateChanged, 
   signOut } from "firebase/auth";
 import {auth} from '../firebase-config';
@@ -29,7 +30,15 @@ const Login = () => {
     }
 
     const login = async () => {
-
+      try {
+       const user = await signInWithEmailAndPassword(
+        auth,
+        loginEmail,
+        loginPassword);
+       console.log(user);
+      } catch(err) {
+        console.log(err.message);
+      }
     }
 
     const logout = async () => {
