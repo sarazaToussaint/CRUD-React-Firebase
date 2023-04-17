@@ -23,7 +23,7 @@ const Login = () => {
         auth,
         registerEmail,
         registerPassword);
-       console.log(user);
+        console.log(user);
       } catch(err) {
         console.log(err.message);
       }
@@ -50,7 +50,7 @@ const Login = () => {
       <div>
         <h3>Register User</h3>
         <input type="email" placeholder='Email...' 
-         onChange={(e) => {
+          onChange={(e) => {
            setRegisterEmail(e.target.value);    
           }} 
           />
