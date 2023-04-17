@@ -71,8 +71,8 @@ const Login = () => {
            }}
            />
         <input type="password" placeholder='Password...' 
-          onChange={(e) => {
-            setLoginPassword(e.target.value);
+          onChange={(event) => {
+            setLoginPassword(event.target.value);
             }}
             />
         
