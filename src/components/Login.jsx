@@ -1,6 +1,19 @@
 import React from 'react'
 
 const Login = () => {
+
+    const register = async () => {
+
+    }
+
+    const login = async () => {
+
+    }
+
+    const logout = async () => {
+
+    }
+
   return (
     <>
       <div>
