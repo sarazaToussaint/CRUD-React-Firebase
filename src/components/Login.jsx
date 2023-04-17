@@ -22,23 +22,39 @@ const Login = () => {
     <>
       <div>
         <h3>Register User</h3>
-        <input type="email" placeholder='Email...' />
-        <input type="password" placeholder='Password...' />
+        <input type="email" placeholder='Email...' 
+         onChange={(e) => {
+           setRegisterEmail(e.target.value);    
+          }} 
+          />
+        <input type="password" placeholder='Password...' 
+          onChange={(e) => {
+          setRegisterPassword(e.target.value);
+           }} 
+          />
 
-        <button>Create User</button>
+        <button onClick={register()}>Create User</button>
       </div>
 
       <div>
         <h3>Login</h3>
-        <input type="email" placeholder='Email...' />
-        <input type="password" placeholder='Password...' />
+        <input type="email" placeholder='Email...' 
+          onChange={(e) => {
+           setLoginEmail(e.target.value);
+           }}
+           />
+        <input type="password" placeholder='Password...' 
+          onChange={(e) => {
+            setLoginPassword(e.target.value);
+            }} 
+            />
 
-        <button>Login</button>
+        <button onClick={login()}>Login</button>
       </div>
 
       <h4>User Logged In: </h4>
 
-      <button>Sign Out</button>
+      <button onClick={logout()}>Sign Out</button>
     </>
   )
 }
