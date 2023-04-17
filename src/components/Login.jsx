@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { createUserWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
+import { createUserWithEmailAndPassword, 
+  onAuthStateChanged, 
+  signOut } from "firebase/auth";
 import {auth} from '../firebase-config';
 
 const Login = () => {
@@ -9,6 +11,10 @@ const Login = () => {
     const [loginPassword, setLoginPassword] = useState("");
 
     const [user, setUser] = useState({});
+
+    onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    })
 
     const register = async () => {
      try {
@@ -27,7 +33,7 @@ const Login = () => {
     }
 
     const logout = async () => {
-
+      await signOut(auth);
     }
 
   return (
@@ -65,7 +71,7 @@ const Login = () => {
       </div>
 
       <h4>User Logged In: </h4>
-      {auth.currentUser.email}
+      {user?.email}
       <button onClick={logout}>Sign Out</button>
     </>
   )
