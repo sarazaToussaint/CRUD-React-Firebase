@@ -73,12 +73,12 @@ const Login = () => {
         <input type="password" placeholder='Password...' 
           onChange={(e) => {
             setLoginPassword(e.target.value);
-            }} 
+            }}
             />
-
+        
         <button onClick={login}>Login</button>
       </div>
-
+      
       <h4>User Logged In: </h4>
       {user?.email}
       <button onClick={logout}>Sign Out</button>
