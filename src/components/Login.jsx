@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   onAuthStateChanged, 
-  signOut } from "firebase/auth";
+  signOut 
+} 
+from "firebase/auth";
 import {auth} from '../firebase-config';
 
 const Login = () => {
