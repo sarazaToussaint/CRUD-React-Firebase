@@ -67,8 +67,8 @@ const Login = () => {
       <div>
         <h3>Login</h3>
         <input type="email" placeholder='Email...' 
-          onChange={(event) => {
-           setLoginEmail(event.target.value);
+          onChange={(e) => {
+           setLoginEmail(e.target.value);
            }}
            />
         <input type="password" placeholder='Password...' 
