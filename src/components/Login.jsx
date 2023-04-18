@@ -50,7 +50,7 @@ const Login = () => {
   return (
     <>
       <div>
-        <h3>Register User</h3>
+        <h3>Register</h3>
         <input type="email" placeholder="Email..." 
           onChange={(event) => {
            setRegisterEmail(event.target.value);    
