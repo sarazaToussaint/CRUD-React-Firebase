@@ -57,8 +57,8 @@ const Login = () => {
           }} 
           />
         <input type="password" placeholder="Password..." 
-          onChange={(event) => {
-          setRegisterPassword(event.target.value);
+          onChange={(e) => {
+          setRegisterPassword(e.target.value);
            }} 
           />
         <button onClick={register}>Create User</button>
