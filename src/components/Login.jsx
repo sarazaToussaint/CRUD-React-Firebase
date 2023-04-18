@@ -14,7 +14,6 @@ const Login = () => {
     const [loginPassword, setLoginPassword] = useState("");
 
     const [user, setUser] = useState({});
-
     onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
     })
