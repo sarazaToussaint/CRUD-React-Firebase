@@ -2,7 +2,10 @@ import React from 'react'
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <div className="loginPage">
+      <p>Sign In With Google to Continue</p>
+      <button className="login-with-google-btn">Sign in with google</button>
+    </div>
   )
 }
 
