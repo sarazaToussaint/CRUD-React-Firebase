@@ -171,3 +171,20 @@
     align-items: flex-end;
   }
   
+  .deletePost button {
+    border: none;
+  
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .post .postTextContainer {
+    word-wrap: break-word;
+    height: auto;
+    max-height: 400px;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  
