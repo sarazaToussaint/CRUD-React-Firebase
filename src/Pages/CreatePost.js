@@ -10,8 +10,10 @@ const CreatePost = () => {
           <input type="text" placeholder="Title..." />
         </div>
         <div className="inputGp">
-          
+          <label>Post:</label>
+          <textarea placeholder="Post..." />
         </div>
+        <button type="button">Submit Post</button>
       </div>
     </div>
   )
