@@ -32,14 +32,14 @@ const Home = ({ isAuth }) => {
                 <h1>{post.title}</h1>
               </div>
               <div className="deletePost">
-                {isAuth && post.author.id === auth.currentUser.uid && (
+                {isAuth && post.auth.id === auth.currentUser.uid && (
                  <button type="button"
                   onClick={() => {
                   deletePost(post.id);
                   }}
                   > &#128465;
                   </button>
-                  )};
+                  )}
               </div>
             </div>
             <div className="postTextContainer">{post.postText}</div>
