@@ -10,11 +10,17 @@ const CreatePost = () => {
         <h1>Create a Post</h1>
         <div className="inputGp">
           <label>Title:</label>
-          <input type="text" placeholder="Title..." onChange={(e) => {setTitle(e.target.value)}}/>
+          <input type="text" placeholder="Title..."
+           onChange={(e) => {
+            setTitle(e.target.value);
+            }}/>
         </div>
         <div className="inputGp">
           <label>Post:</label>
-          <textarea placeholder="Post..." onChange={(e) => {setPostText(e.target.value)}}/>
+          <textarea placeholder="Post..."
+           onChange={(e) => {
+            setPostText(e.target.value);
+            }}/>
         </div>
         <button type="button">Submit Post</button>
       </div>
