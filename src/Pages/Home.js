@@ -26,6 +26,7 @@ const Home = () => {
               <div className="title">
                 <h1>{post.title}</h1>
               </div>
+              <div className="deletePost"></div>
             </div>
             <div className="postTextContainer">{post.postText}</div>
             <h3>@{post.auth.name}</h3>
