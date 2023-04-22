@@ -34,6 +34,7 @@ const Home = ({ isAuth }) => {
               <div className="deletePost">
                 {isAuth && post.auth.id === auth.currentUser.uid && (
                  <button type="button"
+                  className="trashBtn"
                   onClick={() => {
                   deletePost(post.id);
                   }}
