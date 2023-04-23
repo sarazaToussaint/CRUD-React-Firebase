@@ -29,7 +29,7 @@ const CreatePost = ({ isAuth }) => {
   return (
     <div className="createPostPage">
       <div className="cpContainer">
-        <h2>Create a Post</h2>
+        <h1>Create a Post</h1>
         <div className="inputGp">
           <label>Title:</label>
           <input type="text" placeholder="Title"
