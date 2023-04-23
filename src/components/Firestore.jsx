@@ -33,7 +33,6 @@ export const Firestore = () => {
       }
   
       getUsers();
-  // eslint-disable-next-line
     }, [])
   
     return (
