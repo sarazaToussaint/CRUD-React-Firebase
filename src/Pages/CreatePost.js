@@ -32,7 +32,7 @@ const CreatePost = ({ isAuth }) => {
         <h1>Create a Post</h1>
         <div className="inputGp">
           <label>Title:</label>
-          <input type="text" placeholder="Title"
+          <input type="text" placeholder="Title..."
            onChange={(e) => {
             setTitle(e.target.value);
             }}/>
