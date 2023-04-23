@@ -8,7 +8,6 @@ const Home = ({ isAuth }) => {
   const postsCollectionRef = collection(db, "posts");
 
   useEffect (() => {
-   
     const getPosts = async () => {
       const data = await getDocs(postsCollectionRef);
       setPostList(data.docs.map((doc) => ({...doc.data(), id: doc.id})));
