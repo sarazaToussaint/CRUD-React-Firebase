@@ -7,7 +7,7 @@ export const Firestore = () => {
     const [ newAge, setNewAge ] = useState(0);
   
     const [ users, setUsers ] = useState([]);
-    const usersCollectionRef = collection(db, "users");
+    const usersCollectionRef = collection(db, "user");
   
     const createUser = async () => {
       await addDoc(usersCollectionRef, {name: newName, age: Number(newAge)} )
