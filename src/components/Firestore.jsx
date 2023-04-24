@@ -57,7 +57,7 @@ export const Firestore = () => {
               <h3>Age: {user.age}</h3>
               <button 
                 onClick={() => {updateUser(user.id, user.age)}}>Increase age</button>
-              <button onClick={() => {deleteUser(user.id);}}>Delete user</button>
+              <button onClick={() => {deleteUser(user.id);}}>Delete User</button>
             </div>
           );
         })}
