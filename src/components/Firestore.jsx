@@ -3,7 +3,7 @@ import { db } from '../firebase-config';
 import { collection, getDocs, addDoc, updateDoc, doc, deleteDoc} from 'firebase/firestore';
 
 export const Firestore = () => {
-    const [ newName, setNewName ] = useState([]);
+    const [ newName, setNewName ] = useState("");
     const [ newAge, setNewAge ] = useState(0);
   
     const [ users, setUsers ] = useState([]);
