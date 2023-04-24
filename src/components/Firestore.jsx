@@ -16,7 +16,7 @@ export const Firestore = () => {
     const updateUser = async (id, age) => {
        const userDoc = doc(db, "users", id)
        const newFileds = {age: age + 1};
-       await updateDoc(userDoc, newFileds)
+       await updateDoc(userDoc, newFileds);
     };
   
     const deleteUser = async (id) => {
@@ -56,7 +56,7 @@ export const Firestore = () => {
               <h3>Name: {user.name}</h3>
               <h3>Age: {user.age}</h3>
               <button 
-                onClick={() => {updateUser(user.id, user.age)}}>Increase Age</button>
+                onClick={() => {updateUser(user.id, user.age)}}>Increase age</button>
               <button onClick={() => {deleteUser(user.id);}}>Delete user</button>
             </div>
           );
