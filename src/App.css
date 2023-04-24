@@ -39,7 +39,7 @@
     padding: 20px;
     background-color: rgb(71, 65, 126);
     border-radius: 12px;
-    color: white;
+    color: #fff;
     display: flex;
     flex-direction: column;
   }
