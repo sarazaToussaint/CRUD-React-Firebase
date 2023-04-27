@@ -45,7 +45,7 @@ const CreatePost = ({ isAuth }) => {
             setPostText(event.target.value);
             }}/>
         </div>
-        <button type="button" onClick={createPost}>Submit Post</button>
+        <button type="button" onClick={createPost}>Create Post</button>
       </div>
     </div>
   )
