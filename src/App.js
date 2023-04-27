@@ -31,7 +31,7 @@ function App() {
                 <Link to="/createpost" >Create Post</Link>
                 <button className="logoutBtn" onClick={signUserOut}>Logout</button>
               </>
-             )};
+             )}
         </nav>
         <Routes>
           <Route path="/" element={<Home isAuth={isAuth}/>} />
