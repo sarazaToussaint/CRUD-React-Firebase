@@ -24,7 +24,7 @@ const CreatePost = ({ isAuth }) => {
     if(!isAuth) {
       navigate("/login");
     }
-    
+
   }, []);
 
   return (
@@ -34,8 +34,8 @@ const CreatePost = ({ isAuth }) => {
         <div className="inputGp">
           <label>Title:</label>
           <input type="text" placeholder="Title.."
-           onChange={(e) => {
-            setTitle(e.target.value);
+           onChange={(event) => {
+            setTitle(event.target.value);
             }}/>
         </div>
         <div className="inputGp">
