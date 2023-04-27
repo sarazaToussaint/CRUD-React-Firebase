@@ -41,8 +41,8 @@ const CreatePost = ({ isAuth }) => {
         <div className="inputGp">
           <label>Post:</label>
           <textarea placeholder="Post..."
-           onChange={(e) => {
-            setPostText(e.target.value);
+           onChange={(event) => {
+            setPostText(event.target.value);
             }}/>
         </div>
         <button type="button" onClick={createPost}>Submit Post</button>
