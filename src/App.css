@@ -29,7 +29,7 @@
   .createPostPage {
     width: 100%;
     height: calc(100vh - 80px);
-    display: grid;
+    display: flex;
     place-items: center;
   }
   
