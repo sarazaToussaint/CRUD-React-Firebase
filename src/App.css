@@ -185,7 +185,7 @@
     max-height: 400px;
     width: 100%;
     overflow: hidden;
-    overflow-y: none;
+    overflow-y: auto;
   }
 
   .logoutBtn {
